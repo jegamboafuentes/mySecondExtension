@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Generador de Imágenes con DALL·E",
+    "name": "Generador de imagenes de Enrique",
     "version": "1.0",
     "description": "Genera una imagen basada en el texto seleccionado usando DALL·E.",
     "permissions": ["contextMenus", "activeTab", "scripting", "storage"],
