@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Generador de Imágenes con DALL·E",
+    "version": "1.0",
+    "description": "Genera una imagen basada en el texto seleccionado usando DALL·E.",
+    "permissions": ["contextMenus", "activeTab", "scripting", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/16LOGO.png",
+        "48": "images/48LOGO.png",
+        "128": "images/128LOGO.png"
+      }
+    }
+  }
+  
