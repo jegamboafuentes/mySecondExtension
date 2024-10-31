@@ -22,6 +22,7 @@ chrome.runtime.onInstalled.addListener(() => {
             "Authorization": `Bearer ${apiKey}`
           },
           body: JSON.stringify({
+            model: "dall-e-3",  // Asegúrate de especificar el modelo
             prompt: prompt,
             n: 1,
             size: "1024x1024"
